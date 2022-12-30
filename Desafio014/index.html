@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body{
+            text-align: center;
+            border-collapse: collapse;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        thead{
+            background-color: darkblue;
+            color: white;
+        }
+        tr.destaque{
+            background-color: darkblue;
+            color: white;
+        }
+        th,td{
+            border: 1px solid black;
+            padding: 5px;
+        }
+        table{
+            border-collapse: collapse;
+            width: 500px;
+            height: 350px;
+        }
+        td.disciplina, th.media{
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th rowspan="2">Área</th>
+                <th rowspan="2">Disciplinas</th>
+                <th colspan="4">Notas</th>
+                <th rowspan="2">Média</th>
+            </tr>
+            <tr>
+                <th>Nota 1</th>
+                <th>Nota 2</th>
+                <th>Nota 3</th>
+                <th>Nota 4</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th rowspan="4">Exatas</th>
+                <td class="disciplina">Matemática</td>
+                <td>9</td>
+                <td>10</td>
+                <td>8</td>
+                <td>7</td>
+                <td>8.5</td>
+            </tr>
+            <tr>
+                <td class="disciplina">Física</td>
+                <td>9</td>
+                <td>10</td>
+                <td>8</td>
+                <td>7</td>
+                <td>8.5</td>
+            </tr>
+            <tr>
+                <td class="disciplina">Química</td>
+                <td>9</td>
+                <td>10</td>
+                <td>8</td>
+                <td>7</td>
+                <td>8.5</td>
+            </tr>
+            <tr>
+                <td class="disciplina">Biologia</td>
+                <td>9</td>
+                <td>10</td>
+                <td>8</td>
+                <td>7</td>
+                <td>8.5</td>
+            </tr>
+            <tr class="destaque">
+                <th class="media" colspan="6">Média de Exatas</th>
+                <td>8.5</td>
+            </tr>
+            <tr>
+                <th rowspan="2">Humanas</th>
+                <td class="disciplina">História</td>
+                <td>9</td>
+                <td>10</td>
+                <td>8</td>
+                <td>7</td>
+                <td>8.5</td>
+            </tr>
+            <tr>
+                <td class="disciplina">Geografia</td>
+                <td>9</td>
+                <td>10</td>
+                <td>8</td>
+                <td>7</td>
+                <td>8.5</td>
+            </tr>
+            <tr class="destaque">
+                <th class="media" colspan="6">Média de Humanas</th>
+                <td>8.5</td>
+            </tr>
+
+
+        </tbody>
+    </table>
+</body>
+</html>
